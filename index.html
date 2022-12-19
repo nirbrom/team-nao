@@ -3,6 +3,7 @@
   <head>
     <title>NAO</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       body {
         background-color: #f4f4f4;
@@ -42,7 +43,7 @@
         display: block;
         font-size: 14px;
         font-weight: 600;
-        margin-bottom: 2px;
+        margin-bottom: 8px;
       }
 
       input[type="text"],
@@ -84,6 +85,12 @@
       input[type="submit"]:hover {
         background-color: #222;
       }
+
+      @media (max-width: 600px) {
+        body {
+          font-size: 12px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -93,7 +100,7 @@
       <img src="naoist.png" style="width: 230px;">
       <p>We are looking for Ya'av Gur Arie, if you find him mail us:</p>
       
-    <form action="mailto:ctfteamnao@gmail.com" method="post" enctype="text/plain">
+      <form action="mailto:ctfteamnao@gmail.com" method="post" enctype="text/plain">
         <label for="name">Name:</label>
         <br>
         <input type="text" id="name" name="name">
@@ -107,9 +114,11 @@
         <textarea id="message" name="message" rows="5" cols="50"></textarea>
         <br>
         <input type="submit" value="Send">
-      </form><p>
+      </form>
+      <p>
         <b>3c46fdd071e979b10c7a2ccc395e72f0</b>
-      </p></div>
+      </p>
+    </div>
     <!--MUCH{DELETE FROM MOSSAD_AGENTS WHERE USER='YaavGurArie';}-->
-</body>
+  </body>
 </html>
