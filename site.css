@@ -1,4 +1,4 @@
- body {
+      body {
         background-color: #f4f4f4;
         font-family: Arial, sans-serif;
         max-width: 50rem;
@@ -96,6 +96,5 @@
         color: #666;
         font-size: 0.875rem;
         line-height: 1.5;
-        margin-bottom: 1.25rem;
-      }
-      
+        margin-bottom: -1.2rem;
+     }
