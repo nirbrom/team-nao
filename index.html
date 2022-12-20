@@ -12,15 +12,13 @@
     <div align="center">
       <h1><b>Team NAO</b></h1>
       
-      <img src="naoist.png" style="width: 13.75rem;">
-      <p>We are looking for Ya'av Gur Arie, if you find him mail us:</p>
-      
+      <img src="naoist.png" style="width: 13.75rem;">      
       <div id="messageboard">
         <div class="message">Message 1</div>
         <div class="message">Message 2</div>
         <div class="message">Message 3</div>
       </div>
-      
+      <br>
       <form action="mailto:ctfteamnao@gmail.com" method="post" enctype="text/plain">
         <label for="name">Name:</label>
         <br>
@@ -48,7 +46,14 @@
     <script type="text/javascript" src="slick.min.js"></script>    
     <script>
       $(document).ready(function() {
-        $("#messageboard").slick();
+        $("#messageboard").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        });
       });
     </script>
   </body>
