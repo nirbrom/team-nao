@@ -4,9 +4,9 @@
     <title>NAO</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <style>
-     
-      body {
+ body {
         background-color: #f4f4f4;
         font-family: Arial, sans-serif;
         max-width: 50rem;
@@ -91,7 +91,22 @@
           font-size: 0.75rem;
         }
       }
-    
+      
+      /* example styles for the messageboard and messages */
+      #messageboard {
+        width: 75%; /* adjust the width to your liking */
+        margin: 0 auto;
+      }
+
+      .message {
+        background-color: #f4f4f4;
+        border: 0.063rem solid #ddd;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.25rem;
+        padding: 1rem;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -100,6 +115,12 @@
       
       <img src="naoist.png" style="width: 13.75rem;">
       <p>We are looking for Ya'av Gur Arie, if you find him mail us:</p>
+      
+      <div id="messageboard">
+        <div class="message">Message 1</div>
+        <div class="message">Message 2</div>
+        <div class="message">Message 3</div>
+      </div>
       
       <form action="mailto:ctfteamnao@gmail.com" method="post" enctype="text/plain">
         <label for="name">Name:</label>
@@ -121,5 +142,15 @@
       </p>
     </div>
     <!--MUCH{DELETE FROM MOSSAD_AGENTS WHERE USER='YaavGurArie';}-->
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#messageboard").slick({
+          // options go here
+        });
+      });
+    </script>
   </body>
 </html>
+
