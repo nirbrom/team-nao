@@ -83,4 +83,19 @@
           font-size: 0.75rem;
         }
       }
+
+      #messageboard {
+        width: 75%; /* adjust the width to your liking */
+        margin: 0 auto;
+      }
+
+      .message {
+        background-color: #f4f4f4;
+        border: 0.063rem solid #ddd;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.25rem;
+        padding: 1rem;
+        text-align: center;
+      }
       
